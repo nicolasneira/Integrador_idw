@@ -2,47 +2,10 @@ body{
 	margin:0;
 	background-color:#E4E4E4;
 }
-.cabecera {
-  height: 100%;
-  width: 100%;
-  background-color:#1A106D ;
+.formulario{
+	margin:30px;
+	border: 5px solid #1A106D;
+	width:45%;
+	border-radius: 20%;
 }
-.menu{
-  width: 100%;
-  margin: 0 auto;
-}
-header{
-  background-color: #1A106D;
-  width: 100%;
-  clear: both;
-  display: table;
-  content: '';
-}
-nav{
-  float: right;
-}
-nav ul li{
-  list-style: none;
-	margin:15px;
-  float: left;
-  padding:0;
-  position: relative;
-}
-nav ul li a{
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-}
-nav ul li a::before{
-  display: block;
-  content: '';
-  width: 0;
-  background-color: #ffff;
-  height: 5px;
-  top: 0;
-  position: absolute;
-  transition: width 0.2s;
-}
-nav ul li a:hover::before{
-width: 100%;
-}
+
