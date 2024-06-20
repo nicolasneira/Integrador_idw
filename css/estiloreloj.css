@@ -1,0 +1,19 @@
+.clock{
+	width: 300px;
+	height: 300px;
+	margin: 50px auto;
+	border: 2px solid #ccc;
+	border-radius: 30%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	background-color: #FF9A70;
+	flex-direction:column;
+}
+#time{
+	font-size: 50px;
+	background-color:;
+}
+#fecha{
+	font-size: 30px;
+}
