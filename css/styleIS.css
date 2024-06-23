@@ -1,0 +1,14 @@
+body{
+	margin:0;
+	background-color:#E4E4E4;
+}
+.completo{
+	margin-bottom: 60px;
+	margin-top:60px;
+	display:flex;
+}
+.tit{
+	margin-right:20px;
+	margin-left:20px;
+}
+

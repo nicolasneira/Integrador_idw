@@ -1,3 +1,7 @@
+body{
+	margin: 0;
+	background-color:#E4E4E4;
+}
 .cabecera {
   height: 100%;
   width: 100%;
@@ -42,13 +46,18 @@ nav ul li a::before{
 nav ul li a:hover::before{
 width: 100%;
 }
+
 .pie{
 	background-color:#1A106D;
+	height:100%;
+	width:100%;
+	
 }
 .iconos{
 	text-align:right;
 	margin-right:30px;
 	background-color:#1A106D;
+	
 }
 .imgic{
 	width:30px;

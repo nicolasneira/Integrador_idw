@@ -7,6 +7,7 @@
   <title>Netweb</title>
   <link href="css/stylecab.css" rel="stylesheet" type="text/css" />
   <link href="css/style2.css" rel="stylesheet" type="text/css" />
+   <link href="css/stylefor.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div class="cabecera">
@@ -24,20 +25,80 @@
 			</nav>
 		</div>
 		</header>
-	 
+	<div class="cuerpo">
+	<div class="incio">
 	<div class="formulario">
 		 <div class="encabezado">
 		 <h2>Solicitud de Servicio </h2>
 		 </div>
-		 <div class="campos">
-		 
+		 <div class="cuerpo">
+		 <form method="post">
+		 <div class="tit">
+		 <h3>Datos personales del solicitante:</h2>
 		 </div>
+		 
+		 <div class="campos">
+		 <label for="nombre">Nombre: </label>
+		 <input type="text" id="nombre" name="nombre" required>
+		 </div>
+		 <div class="campos">
+		 <label for="apellido">Apellido: </label>
+		 <input type="text" id="apellido" name="apellido" required>
+		 </div>
+		 <div class="campos">
+		 <label for="fecha_nacimiento">Fecha de Nacimiento: </label>
+		 <input type="date" id="fecha_nacimiento">
+		 </div>
+		 <div class="campos">
+		 <label for="telefono">Telefono</label>
+		 <input type="number" id="telefono" name="telefono" required>
+		 </div>
+		 <div class="tit">
+		 <h3>Datos de instalacion: </h3>
+		 </div>
+		 <div class="campos">
+		 <label for="fecha_solicitud">Fecha de Socilictud:</label>
+		 <input type="date" id="fecha_solicitud">
+		 </div>
+		 <div class="campos">
+		 <label for="direccion">Domicilio: </label>
+		 <input type="text" id="direccion" name="direccion" required>
+		 </div>
+		 <div class="campos">
+		 <label for="tip_residencia">Tipo de residencia: </label>
+		 <select id="tip_residencia" onchange="otro()" required>
+			<option value="casa" select="true">Casa</option>
+			<option value="dpto" select="true">Departamento</option>
+			<option value="comercio" select="true">Comercio</option>
+			<option value="otro">otro</option>
+		</select>
+		</div>
+		<div class="campos">
+		<label for="plan">Plan: </label>
+		<select id="plan" required>
+			<option value="p300">300 MB</option>
+			<option value="p500">500 MB</option>
+			<option value="p700">700 MB</option>
+		</select>
+		</div>
+		<div class="campos">
+		<label for="hra">Preferencia Horaria: </label>
+		<select id="hra" required>
+			<option value="mañana">Mañana</option>
+			<option value="tarde">Tarde</option>
+		</select>
+		</div>
+		 <button type="submit">Enviar</button>
+		</form>
 	</div>
-	<div class="clock">
+	</div>
+	</div>
+	<div class="reloj">
 		<link rel="stylesheet" href="css\estiloreloj.css">
 		<script src="js\scriptreloj.js" defer></script>
 		<div id="time"></div>
 		<div id="fecha"></div>
+	</div>
 	</div>
 	<div class="pie">
 		 <h1>NetWeb</h1>
@@ -52,11 +113,8 @@
 			<img class="imgic" src="img/icig.png" alt="icono de instagram">
 			</a>			
 			<a href="https://x.com/X">
-			<img class="imgic" src="img/ictw.png" alt="icono de x">
+			<img class="imgic" src="img/ictw.png" alt="icono de x"></a>
 		</div>	
-			</a>
-			
-			
-			
 	</div>
 </body>
+</html>
