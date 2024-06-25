@@ -8,6 +8,7 @@
 	<link href="css/stylecab.css" rel="stylesheet" type="text/css" />
 	<link href="css/styleIS.css" rel="stylesheet" type="text/css">
 	<link href="css/stylefor.css" rel="stylesheet" type="text/css" />
+	<script src="js/verificacion.js"></script>
 </head>
 <body>
 	<div class="cabecera">
@@ -31,17 +32,18 @@
 	<p>¡Bienvenido al portal de inicio de sesión para empleados de nuestra empresa de servicios de internet!</p> 
 	<p>Por favor, ingresa su usuario y contraseña para acceder a las herramientas y recursos</p>
 	</div>
+	<div class="form">
 	<div class="incio">
 	<div class="formulario">
 		 <div class="cuerpo">
 		 <form method="post">
 		 <div class="campos">
 		 <label for="user">Usuario: </label>
-		 <input type="text" id="user" name="user" required>
+		 <input type="text" id="user" name="user" onChange="veruse()" required>
 		 </div>
 		 <div class="campos">
 		 <label for="cont">Contraseña: </label>
-		 <input type="password" id="cont" name="cont" required>
+		 <input type="password" id="cont" name="cont" onChange="vercont()" required>
 		 </div>
 		 <button id="singIn" type="button" onclick="loging()">inciar sesión</button>
 		 <script src="js/scriptIS.js"></script>
@@ -51,8 +53,10 @@
 	</div>
 	</div>
 	</div>
+	</div>
 		<script src="js/scriptIS.js"></script>
 	</div>
+	<footer>
 	<div class="pie">
 		 <h1>NetWeb</h1>
 		<div class="iconos">
@@ -70,5 +74,6 @@
 			</a>
 		</div>	
 	</div>
+	</footer>
 </body>
 </html>

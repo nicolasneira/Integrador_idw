@@ -6,7 +6,7 @@
 .formulario{
 	border: 1px solid #1A106D;
 	border-radius:5px;
-	width:500px;
+	width:400px;
 }
 .encabezado{
 	background-color:#1A106D;
@@ -28,6 +28,8 @@ input[type="text"],
 input[type="number"],
 input[type="date"],
 input[type="password"],
+input[type="email"],
+input[type="time"],
 select{
 	width:100%;
 	padding:8px;
@@ -35,13 +37,15 @@ select{
 	border-radius:3px;
 	box-sizing:border-box;
 }
+input[type="submit"],
 button{
-	background-color:#007bff;
+	background-color:#004AAD;
 	color:#fff;
 	border:none;
-	border-radius:3px;
+	border-radius:5px;
 	padding:10px 20px;
 	cursor: pointer;
+	margin:10px;
 }	
 button:hover{
 	background-color#0056b3;

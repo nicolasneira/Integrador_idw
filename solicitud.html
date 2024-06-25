@@ -7,7 +7,9 @@
   <title>Netweb</title>
   <link href="css/stylecab.css" rel="stylesheet" type="text/css" />
   <link href="css/style2.css" rel="stylesheet" type="text/css" />
-   <link href="css/stylefor.css" rel="stylesheet" type="text/css" />
+  <link href="css/stylefor.css" rel="stylesheet" type="text/css" />
+  <script src="js/agregarcampo.js"></script>
+  <script src="js/verificacion.js"></script>
 </head>
 <body>
 	<div class="cabecera">
@@ -26,24 +28,29 @@
 		</div>
 		</header>
 	<div class="bodycuer">
+	<div class="bodyformulario">
 	<div class="incio">
-	<div class="formulario">
+	<div class="formulario" >
 		 <div class="encabezado">
 		 <h2>Solicitud de Servicio </h2>
 		 </div>
 		 <div class="cuerpo">
-		 <form method="post">
+		 <form method="post" id="form">
 		 <div class="tit">
 		 <h3>Datos personales del solicitante:</h2>
 		 </div>
 		 
 		 <div class="campos">
+		 <label for="dni">DNI: </label>
+		 <input type="text" id="dni" name="dni" onChange="verdni()" required>
+		 </div>
+		 <div class="campos">
 		 <label for="nombre">Nombre: </label>
-		 <input type="text" id="nombre" name="nombre" required>
+		 <input type="text" id="nombre" name="nombre" onChange="vernom()" required>
 		 </div>
 		 <div class="campos">
 		 <label for="apellido">Apellido: </label>
-		 <input type="text" id="apellido" name="apellido" required>
+		 <input type="text" id="apellido" name="apellido" onChange="verape()" required>
 		 </div>
 		 <div class="campos">
 		 <label for="fecha_nacimiento">Fecha de Nacimiento: </label>
@@ -51,29 +58,20 @@
 		 </div>
 		 <div class="campos">
 		 <label for="telefono">Telefono</label>
-		 <input type="number" id="telefono" name="telefono" required>
+		 <input type="number" id="telefono" name="telefono" onChange="vertel()" required>
 		 </div>
 		 <div class="tit">
 		 <h3>Datos de instalacion: </h3>
 		 </div>
 		 <div class="campos">
 		 <label for="fecha_solicitud">Fecha de Socilictud:</label>
-		 <input type="date" id="fecha_solicitud">
+		 <input type="date" id="fecha_solicitud" >
 		 </div>
 		 <div class="campos">
 		 <label for="direccion">Domicilio: </label>
-		 <input type="text" id="direccion" name="direccion" required>
+		 <input type="text" id="direccion" name="direccion" onChange="verdir()" required>
 		 </div>
 		 <div class="campos">
-		 <label for="tip_residencia">Tipo de residencia: </label>
-		 <select id="tip_residencia" onchange="otro()" required>
-			<option value="casa" select="true">Casa</option>
-			<option value="dpto" select="true">Departamento</option>
-			<option value="comercio" select="true">Comercio</option>
-			<option value="otro">otro</option>
-		</select>
-		</div>
-		<div class="campos">
 		<label for="plan">Plan: </label>
 		<select id="plan" required>
 			<option value="p300">300 MB</option>
@@ -88,16 +86,35 @@
 			<option value="tarde">Tarde</option>
 		</select>
 		</div>
-		}
+		 <div class="campos">
+		 <label for="tip_residencia">Tipo de residencia: </label>
+		 <select id="tip_residencia" onChange="otros()" required>
+			<option value="casa" >Casa</option>
+			<option value="dpto" >Departamento</option>
+			<option value="comercio">Comercio</option>
+			<option value="otro">otro</option>
+		</select>
+		</div>
+		<div class="campos" id="pos">
+		</div>
+		
+		<input id="carga" type="submit" value="Aceptar">
+		
 		</form>
 	</div>
 	</div>
 	</div>
+	</div>
+	<div class="izq">
+	<div class="image">
+		<img src="img/planes.png" class="imgbody">
+	</div>
 	<div class="reloj">
 		<link rel="stylesheet" href="css\estiloreloj.css">
 		<script src="js\scriptreloj.js" defer></script>
-		<div id="time"></div>
-		<div id="fecha"></div>
+		<div id="times"></div>
+		<div id="fechas"></div>
+	</div>
 	</div>
 	</div>
 	<div class="pie">

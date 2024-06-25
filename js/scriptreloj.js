@@ -11,9 +11,9 @@ function actualizarReloj(){
 	
 	
 	var tiempoString = hora + ":" + minutos + ":" + segundos;
-	document.getElementById("time").textContent=tiempoString;
+	document.getElementById("times").textContent=tiempoString;
 	
-	document.getElementById("fecha").textContent=fechaSting;
+	document.getElementById("fechas").textContent=fechaSting;
 	
 	setTimeout(actualizarReloj, 1000);
 }

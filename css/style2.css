@@ -2,15 +2,70 @@ body{
 	margin:0;
 	background-color:#E4E4E4;
 }
-.relojpos{
-	justify-content: right;
-	width:400px;
-	text-align:right;
+.bodycuer{
+	
 	
 }
-.bodycuer{
+.bodyformulario{
+	margin:20px;
+	padding:20px;
+	float:left;
+	width:40%;
+}
+.izq{
+	margin-top:50px;
+	margin-left:50px;
+	padding:20px;
+	float:left;
+	width:40%;
+}
+.pie{
+	float:left;
+	width:100%
+	
+}
+.descarga,
+.link{
+	float:left;
+	width:100%
+}
+
+@media screen and(max-width: 1000px){
+	.bodyformulario, .izq,.pie{
+		width:100%;
+	}
+}
+.izq .image{
+	margin-bottom;50px;
+}
+.imgbody{
+	width:300px;
+}
+.descarga{
 	margin:30px;
+	text-align:left;
+}
+.descarga h1{
+	margin-top:20px;
+	font-size: 36px;
+	color: #000000;
+	font-style: League Spartan;
+}
+.descarga p{
+	font-size:16px;
+	font-style: arial;
+}
+.descarga a{
+	color: #FFBD59;
+	margin-top:15px;
+	margin-left:10px;
+	
+}
+.link{
 	display:flex;
 }
+
+
+
 
 

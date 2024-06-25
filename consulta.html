@@ -8,6 +8,7 @@
   <link href="css/stylecab.css" rel="stylesheet" type="text/css" />
   <link href="css/styleconsulta.css" rel="stylesheet" type="text/css" />
    <link href="css/stylefor.css" rel="stylesheet" type="text/css" />
+   <script src="js/verificacion.js"></script>
 </head>
 <body>
 	<div class="cabecera">
@@ -26,6 +27,7 @@
 		</div>
 		</header>
 		<div class="cuerpobus">
+			<div class="form">
 			<div class="inicio">
 				<div class="formulario">
 					<div class="encabezado">
@@ -35,7 +37,7 @@
 					<form method="post">
 						<div class="campos">
 						<label for="dni">DNI:</label>
-						<input type="text" id="dni" name="dni" required>
+						<input type="text" id="dni" name="dni" onChange="verdni()" required>
 						</div>
 						<button id="buscar" type="button" onclick="busqueda()">Buscar</button>
 						<script src="js/consulta.js"></script>
@@ -43,12 +45,12 @@
 					</div>
 				</div>
 			</div>
-			<script src="js/consulta.js"></script>
-			<div class="ver">
-			<div class="respcuer">
-				<h2 id="resp" class="resultado"></h2>
 			</div>
+			
+			
+			<div class="respcuer" id="pos">
 			</div>
+		
 		</div>
 		<div class="pie">
 		 <h1>NetWeb</h1>

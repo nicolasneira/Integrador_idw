@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Netweb</title>
+  <link href="css/stylecab.css" rel="stylesheet" type="text/css" />
+  <link href="css/style2.css" rel="stylesheet" type="text/css" />
+  <link href="css/stylefor.css" rel="stylesheet" type="text/css" />
+  <script src="js/verificacion.js"></script>
+</head>
+<body>
+	<div class="cabecera">
+    <img src="img/logo1.png" attr="Netweb" wider="400" height="100">
+	</div>
+		<header>
+		<div class="menu">
+			<nav>
+				<ul>
+				<li><a href="inicio.html">Inicio</a></li>
+				<li><a href="factibilidad.html">Prueba de Factibilidad</a></li>
+				<li><a href="instalacion.html">Instalacion</a></li>
+				<li><a href="sesion.html">Cerrar Sesion</a></li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+		<div class="bodycuer">
+		<div class="bodyformulario">
+			<div class="incio">
+				<div class="formulario">
+					<div class="encabezado">
+						<h2>Instalacion de Servicio </h2>
+					</div>
+				<div class="cuerpo">
+					<form method="post">
+					
+					<div class="tit">
+						<h3>Datos del solicitante:</h2>
+					</div>
+					<div class="campos">
+						<label for="dni">DNI: </label>
+						<input type="text" id="dni" name="dni" onChange="verdni()" required>
+					</div>
+					<div class="campos">
+						<label for="plan">Plan: </label>
+						<select id="plan" required>
+							<option value="p300">300 MB</option>
+							<option value="p500">500 MB</option>
+							<option value="p700">700 MB</option>
+						</select>
+					</div>
+					<div class="tit">
+						<h3>Informacion de Instalacion:</h2>
+					</div>
+					<div class="campos">
+						<label for="fecha">Fecha: </label>
+						<input type="date" id="fecha">
+					</div>
+					<div class="campos">
+						<label for="hra">Hora: </label>
+						<input type="time" id="hra">
+					</div>
+					<div class="campos">
+						<label for="obs">Observaciones: </label>
+						<input type="text" id="obs" name="obs" onChange="verobs()" required>
+					</div>
+					
+					<div class="tit">
+						<h3>Datos del tecnico:</h2>
+					</div>
+					<div class="campos">
+						<label for="dni">DNI: </label>
+						<input type="text" id="dni" name="dni" onChange="verdni()" required>
+					</div>
+					<div class="campos">
+						<label for="mail">Correo Electronico: </label>
+						<input type="email" id="mail" name="mail" required>
+					</div>
+					<input id="carga" type="submit" value="Aceptar">
+					</form>
+					
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="izq">
+			<div class="image">
+				<img src="img/img1.png" class="imgbody">
+			</div>
+			<div class="reloj">
+				<link rel="stylesheet" href="css\estiloreloj.css">
+				<script src="js\scriptreloj.js" defer></script>
+					<div id="times"></div>
+					<div id="fechas"></div>
+			</div>
+		</div>
+		</div>
+		<div class="pie">
+			<h1>NetWeb</h1>
+			<div class="iconos">
+				<a href="https://web.whatsapp.com/">
+				<img class="imgic" src="img/icwp.png" alt="icono de whatsapp" >
+				</a>
+				<a href="https://www.facebook.com/">
+				<img class="imgic" src="img/icfb.png" alt="icono de facebook">
+				</a>
+				<a href="https://www.instagram.com/">
+				<img class="imgic" src="img/icig.png" alt="icono de instagram">
+				</a>			
+				<a href="https://x.com/X">
+				<img class="imgic" src="img/ictw.png" alt="icono de x">
+				</a>
+			</div>	
+		</div>
+		
+</body>
+</html>

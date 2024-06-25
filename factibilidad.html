@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Netweb</title>
+  <link href="css/stylecab.css" rel="stylesheet" type="text/css" />
+  <link href="css/style2.css" rel="stylesheet" type="text/css" />
+   <link href="css/stylefor.css" rel="stylesheet" type="text/css" />
+   <script src="js/verificacion.js"></script>
+</head>
+<body>
+	<div class="cabecera">
+    <img src="img/logo1.png" attr="Netweb" wider="400" height="100">
+	</div>
+		<header>
+		<div class="menu">
+			<nav>
+				<ul>
+				<li><a href="inicio.html">Inicio</a></li>
+				<li><a href="factibilidad.html">Prueba de Factibilidad</a></li>
+				<li><a href="instalacion.html">Instalacion</a></li>
+				<li><a href="sesion.html">Cerrar Sesion</a></li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+		<div class="intro">
+			<h2>Pruba de factivilidad</h2>
+			<p>En esta arrea
+			</p>
+		</div>
+		<div class="bodycuer">
+		<div class="bodyformulario">
+		
+			<div class="incio">
+				<div class="formulario">
+					<div class="encabezado">
+						<h2>Prueba de Factibilidad </h2>
+					</div>
+				<div class="cuerpo">
+					<form method="post">
+					
+					<div class="tit">
+						<h3>Datos personales del solicitante:</h2>
+					</div>
+					<div class="campos">
+						<label for="dni">DNI: </label>
+						<input type="text" id="dni" name="dni" onChange="verdni()" required>
+					</div>
+					<div class="campos">
+						<label for="direction">Direccion: </label>
+						<input type="text" id="direccion" name="direccion" onChange="verdir()" required>
+					</div>
+					<div class="campos">
+						<label for="fecha">Fecha: </label>
+						<input type="date" id="fecha">
+					</div>
+					<div class="campos">
+						<label for="hra">Hora: </label>
+						<input type="time" id="hra">
+					</div>
+					<div class="campos">
+						<label for="resultado">Resultado: </label>
+							<select id="resul" required>
+								<option value="exito">Exito</option>
+								<option value="fallo">Fallo</option>
+							</select>
+					</div>
+					<div class="tit">
+						<h3>Datos del tecnico:</h2>
+					</div>
+					<div class="campos">
+						<label for="dni">DNI: </label>
+						<input type="text" id="dni" name="dni" onChange="verdni()" required>
+					</div>
+					<div class="campos">
+						<label for="nombre">Nombre: </label>
+						<input type="text" id="nombre" name="nombre" onChange="vernom()"required>
+					</div>
+					<div class="campos">
+						<label for="apellido">Apellido: </label>
+						<input type="text" id="apellido" name="apellido" onChange="verape()" required>
+					</div>
+					<div class="campos">
+						<label for="mail">Correo Electronico: </label>
+						<input type="email" id="mail" name="mail" onChange="vermail()" required>
+					</div>
+					<input id="carga" type="submit" value="Aceptar">
+					</form>
+				</div>
+				</div>
+			</div>
+		</div>
+			<div class="izq">
+				<div class="image">
+					<img src="img/img1.png" class="imgbody">
+				</div>
+				<div class="reloj">
+					<link rel="stylesheet" href="css\estiloreloj.css">
+					<script src="js\scriptreloj.js" defer></script>
+						<div id="times"></div>
+						<div id="fechas"></div>
+				</div>
+	</div>
+	</div>
+	<div class="descarga">
+	<h1>Pruebas de factibilidad realizadas</h1>
+		<div class="link">
+			<p>Precione en descargar para obtener el listados de las solicudes listas para instalar</p>
+			<a href="dow/GE_Neira.pdf" download="GE_Neira">Descargar</a> 
+		</div>
+	</div>
+		<div class="pie">
+			<h1>NetWeb</h1>
+			<div class="iconos">
+				<a href="https://web.whatsapp.com/">
+				<img class="imgic" src="img/icwp.png" alt="icono de whatsapp" >
+				</a>
+				<a href="https://www.facebook.com/">
+				<img class="imgic" src="img/icfb.png" alt="icono de facebook">
+				</a>
+				<a href="https://www.instagram.com/">
+				<img class="imgic" src="img/icig.png" alt="icono de instagram">
+				</a>			
+				<a href="https://x.com/X">
+				<img class="imgic" src="img/ictw.png" alt="icono de x">
+				</a>
+			</div>	
+		</div>
+</body>
+</html>
